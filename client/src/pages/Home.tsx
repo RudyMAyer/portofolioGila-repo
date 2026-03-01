@@ -72,7 +72,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl sm:text-2xl text-muted-foreground font-sans max-w-2xl border-l-4 border-primary pl-4">
-              Netrunner pelajar berusia 17 Tahun dari SMK Bina Teknikal Cileungsi. Meretas batasan realitas melalui kode.
+              Netrunner pelajar berusia 17 Tahun dari SMK Bina Teknika Cileungsi. Meretas batasan realitas melalui kode.
             </p>
 
             <div className="pt-8 flex flex-wrap gap-4">
@@ -99,7 +99,7 @@ export default function Home() {
               <p className="text-muted-foreground leading-relaxed">
                 Halo, sistem mendeteksi nama saya sebagai <span className="text-foreground font-bold text-glow-cyan">Reyga Wahyu Nur HIDAYAT</span>. 
                 Saat ini entitas biologi saya berusia 17 tahun. Saya adalah seorang siswa aktif di 
-                <span className="text-primary font-semibold mx-1">SMK BINA TEKNIKAL CILEUNGSI</span>.
+                <span className="text-primary font-semibold mx-1">SMK BINA TEKNIKA CILEUNGSI</span>.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Saya memiliki ketertarikan yang sangat mendalam pada arsitektur dunia digital, pengembangan perangkat lunak, dan bagaimana menjaga keamanan di dunia maya (Cybersecurity).
@@ -134,8 +134,8 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { name: "Frontend Dev", level: 85, icon: Code2, desc: "HTML, CSS, JS, React", color: "cyan" },
-              { name: "Cyber Security", level: 60, icon: ShieldAlert, desc: "Network Basics, Pen-test intro", color: "pink" },
-              { name: "UI/UX Design", level: 75, icon: Zap, desc: "Figma, Wireframing", color: "cyan" },
+              { name: "Robotika Arduino", level: 80, icon: Cpu, desc: "Microcontroller, Sensors, C++", color: "pink" },
+              { name: "Cyber Security", level: 60, icon: ShieldAlert, desc: "Network Basics, Pen-test intro", color: "cyan" },
               { name: "Hardware Specs", level: 90, icon: Cpu, desc: "PC Building, Troubleshooting", color: "pink" }
             ].map((skill, index) => (
               <CyberCard key={skill.name} delay={index * 0.1} variant={skill.color as "cyan" | "pink"} className="group">
@@ -168,9 +168,9 @@ export default function Home() {
           
           <div className="space-y-4">
             {[
-              { title: "Sertifikasi Dasar Pemrograman", org: "Dicoding Indonesia", year: "2023" },
-              { title: "Peserta Aktif Bootcamp Cyber Security", org: "Kominfo", year: "2023" },
-              { title: "Proyek Terbaik Web Kelas", org: "SMK Bina Teknikal Cileungsi", year: "2024" }
+              { title: "Booth Student Camp PT. Solusi Intek Indonesia", org: "Mikrokontroler", year: "2024" },
+              { title: "Booth Student Camp PT. Solusi Intek Indonesia", org: "Programmer", year: "2025" },
+              { title: "Booth Student Camp PT. Solusi Intek Indonesia", org: "Mikrokontroler", year: "2025" }
             ].map((item, index) => (
               <motion.div
                 key={index}
