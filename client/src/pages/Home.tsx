@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Cpu, Code2, ShieldAlert, Zap, Award, BookOpen, GraduationCap, ChevronRight, User } from "lucide-react";
+import { Cpu, Code2, ShieldAlert, Zap, Award, BookOpen, GraduationCap, ChevronRight, User, Instagram, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { api } from "@shared/routes";
@@ -205,6 +205,27 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <CyberCard delay={0.2} className="relative z-10">
               <div className="absolute inset-0 bg-cyber-grid opacity-10 pointer-events-none" />
+              
+              <div className="grid sm:grid-cols-2 gap-4 mb-8 relative z-20">
+                <a 
+                  href="https://instagram.com/rudymayer.fr" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 bg-primary/5 border border-primary/20 hover:border-primary/50 transition-all group cyber-clip-path"
+                >
+                  <Instagram className="w-5 h-5 text-primary group-hover:box-glow-cyan" />
+                  <span className="text-sm font-display text-muted-foreground group-hover:text-foreground">@rudymayer.fr</span>
+                </a>
+                <a 
+                  href="https://wa.me/6288994380674" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 bg-secondary/5 border border-secondary/20 hover:border-secondary/50 transition-all group cyber-clip-path"
+                >
+                  <Phone className="w-5 h-5 text-secondary group-hover:box-glow-pink" />
+                  <span className="text-sm font-display text-muted-foreground group-hover:text-foreground">+62 889-9438-0674</span>
+                </a>
+              </div>
               
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 relative z-20">
                 <div className="grid sm:grid-cols-2 gap-6">
